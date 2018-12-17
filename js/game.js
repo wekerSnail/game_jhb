@@ -62,7 +62,10 @@
             }
         }
 
-
+        this.start()
+    }
+    Game.prototype.start = function () {
+        var that = this
         var addInterval = setInterval(function () {
             if (!that.isEnd) {
                 that.addMoney(Math.random() * (that.phone.w - 50));
@@ -70,12 +73,6 @@
                 clearInterval(addInterval);
             }
         }, 500);
-
-
-        this.start()
-    }
-    Game.prototype.start = function () {
-        var that = this
         var animate = function (now) {
             that.clear();
             that.draw();
