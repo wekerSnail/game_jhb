@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta content="YES" name="apple-touch-fullscreen"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="no-cache" http-equiv="Cache-Control"/>
+    <meta name="GENERATOR" content="MSHTML 6.00.2900.3527"/>
+    <meta content="240" name="MobileOptimized"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone = no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>接红包</title>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/requestNextAnimationFrame.js"></script>
+    <script src="./js/fx.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/money.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/load.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="load">
+    <div class="loader loader-1">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
+</div>
+<div class="main">
+    <div class="part part1">
+        <div class="part1_start"></div>
+        <div class="part1_regular"></div>
+    </div>
+    <div class="part part2">
+        <div class="score"></div>
+        <div class="time_out"></div>
+        <canvas id="canvas">您的浏览器不支持该游戏</canvas>
+    </div>
+    <div class="part part3">
+        <div class="result_title">
+        </div>
+        <div class="get_title">得分</div>
+        <div class="get_point">0</div>
+        <div class="get_title">历史最高</div>
+        <div class="get_max">0</div>
+        <ul class="btns">
+            <li class="btn_index"></li>
+            <li class="btn_again"></li>
+        </ul>
+    </div>
+    <div class="part part4">
+        <div class="regular">
+            <div class="regulars_title">
+            </div>
+            <div class="regular_content">
+                游戏时间为1分钟，玩家需在1分钟内左右移动福神接住金猪和红包，游戏结束后，按接到金猪/红包的总分值计算得分。得分高于500分，可继续参加本公司线下活动。游戏中金猪/红包分值如下：
+            </div>
+            <ul class="points">
+                <li class="point">
+                    <img src="./img/f1.png" alt="yun"><span>=</span><span>1</span>
+                </li>
+                <li class="point">
+                    <img src="./img/f3.png" alt="5g"><span>=</span><span>1</span>
+                </li>
+                <li class="point">
+                    <img src="./img/f2.png" alt="pig"><span>=</span><span>5</span>
+                </li>
+                <li class="point">
+                    <img src="./img/f0.png" alt="boom"><span>=</span><span>-3</span>
+                </li>
+            </ul>
+        </div>
+        <div class="regular_back"></div>
+    </div>
+</div>
+</body>
+</html>
